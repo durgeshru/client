@@ -12,6 +12,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 30px;
+  width: 80%;
 }
 
 .hire-card {
@@ -64,6 +65,7 @@
   color: #333;
   font-size: 1.5em;
   z-index: 1;
+  
 }
 
 .hire-card p {

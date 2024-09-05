@@ -4,7 +4,7 @@ import Navbar from '../Navbars/Navbar';
 import Footer from '../footer/footer';
 import Button from '../button/Button';
 import Webservicemain from '../Webservicemain.js/Webservicemain';
-import imgSrc from "../Kotibox img/Main img/web.jpg";
+import imgSrc from "../Kotibox img/images/website.jpg";
 import MainContent from '../Main content/MainContent';
 import { Link } from 'react-router-dom';
 
