@@ -1,0 +1,219 @@
+/* Overview Container */
+.overview {
+    background: rgb(43, 41, 41);
+    padding: 50px 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 5px solid black;
+    margin: 0 auto;
+}
+
+/* Profile Image */
+.profile__img img {
+    max-width: 100%;
+    border-radius: 10%;
+    height: 300px;
+}
+
+/* Profile Text */
+.profile__text {
+    color: aliceblue;
+    flex: 1;
+    text-align: center;
+}
+
+.profile__text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.profile__text p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+
+
+/* Media Queries for Responsive Design */
+
+/* Extra Small devices (300px - 400px) */
+@media screen and (max-width: 400px) {
+    .profile__text h1 {
+        font-size: 1.5rem;
+    }
+    .profile__text p {
+        font-size: 0.9rem;
+    }
+    .overview {
+        width: 90%;
+        padding: 20px 10px;
+    }
+}
+
+/* Small devices (401px - 600px) */
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    .profile__text h1 {
+        font-size: 1.8rem;
+    }
+    .profile__text p {
+        font-size: 1rem;
+    }
+    .overview {
+        padding: 30px 15px;
+    }
+}
+
+/* Medium devices (601px - 800px) */
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .profile__text h1 {
+        font-size: 2.0rem;
+    }
+    .profile__text p {
+        font-size: 1.05rem;
+    }
+    .overview {
+        padding: 40px 20px;
+    }
+    .img-fluid{
+        display: none;
+    }
+}
+
+/* Large devices (801px - 1000px) */
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    .profile__text h1 {
+        font-size: 2.3rem;
+    }
+    .profile__text p {
+        font-size: 1.1rem;
+    }
+    .overview {
+        padding: 50px 30px;
+    }
+}
+
+/* Extra Large devices (1001px - 1200px) */
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .profile__text h1 {
+        font-size: 2.5rem;
+    }
+    .profile__text p {
+        font-size: 1.2rem;
+    }
+    .overview {
+        padding: 60px 40px;
+    }
+}
+
+/* Super Large devices (above 1200px) */
+@media screen and (min-width: 1201px) {
+    .profile__text h1 {
+        font-size: 2.5rem;
+    }
+    .profile__text p {
+        font-size: 1.3rem;
+    }
+}
+
+/* Flex-wrap Behavior for Smaller Screens */
+@media screen and (max-width: 800px) {
+    .profile__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .img-fluid{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+  
+    .img-fluid{
+        display: none;
+    }
+}
+
+/* Default button styles */
+.snslist .btn {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ff4d4d; /* Adjust as needed */
+    color: white;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.snslist .btn:hover {
+    background-color: #e60000; /* Adjust as needed */
+    transform: scale(1.05);
+}
+
+/* Extra Small devices (300px - 400px) */
+@media screen and (max-width: 400px) {
+    .snslist .btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Small devices (401px - 500px) */
+@media screen and (min-width: 401px) and (max-width: 500px) {
+    .snslist .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Medium devices (501px - 600px) */
+@media screen and (min-width: 501px) and (max-width: 600px) {
+    .snslist .btn {
+        padding: 9px 18px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Large devices (601px - 700px) */
+@media screen and (min-width: 601px) and (max-width: 700px) {
+    .snslist .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Extra Large devices (701px - 800px) */
+@media screen and (min-width: 701px) and (max-width: 800px) {
+    .snslist .btn {
+        padding: 11px 22px;
+        font-size: 1.05rem;
+    }
+}
+
+/* Larger Extra Large devices (801px - 900px) */
+@media screen and (min-width: 801px) and (max-width: 900px) {
+    .snslist .btn {
+        padding: 12px 24px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Large devices (901px - 1000px) */
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+    .snslist .btn {
+        padding: 14px 14px;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+/* Ultra Large devices (above 1300px) */
+@media screen and (min-width: 1301px) {
+    .snslist .btn {
+        padding: 20px 40px;
+        font-size: 1.5rem;
+    }
+}

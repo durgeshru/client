@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+body {
+  background-image: url("https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/starfield-banner.jpg");
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  padding: 0.5em;
+  perspective: 500px;
+  width: 90%;
+  justify-content: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  position: relative;
+  background-size: cover;
+  border-radius: 7px;
+  overflow: hidden;
+  padding: 1em;
+  cursor: pointer;
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: all 0.2s linear;
+  will-change: transform;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 0, 0, 0.3) 20%,
+    rgba(0, 0, 0, 0.4) 50%
+  );
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.article h1 {
+  font-size: 1.5em;
+  font-family: 'Oswald';
+  margin-top: auto;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  transform: translateY(-20px);
+}
+
+.article h1 span {
+  color: #fff;
+}
+
+.article span.cat {
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+  color: #fff;
+}
+
+@media screen and (min-width: 1000px) {
+  .wrap {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+    padding: 1em;
+  }
+  .article h1 {
+    transform: translateY(0px);
+  }
+  .article:hover h1 {
+    transform: translateY(-20px);
+  }
+  .article span.cat {
+    color: transparent;
+  }
+  .article:hover span.cat {
+    animation: reveal 0.4s forwards;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    color: transparent;
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+    color: #fff;
+  }
+}
+
+

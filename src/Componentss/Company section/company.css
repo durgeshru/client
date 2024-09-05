@@ -1,0 +1,173 @@
+.company-section {
+  padding: 1rem;
+  background-color: #1a1a1a;
+  width: 100%;
+}
+
+.company-section-text {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.company-section-text h1 {
+  color: rgb(255, 115, 0);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.company-section-text p {
+  color: rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.company-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 50px;
+}
+
+.company-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-logo {
+  width: 120px;
+  height: 120px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.company-logo-container p {
+  width: 120px;
+  text-align: center;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+.company-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .company-logo {
+    width: 110px;
+    height: 110px;
+  }
+  .company-logo-container p {
+    width: 110px;
+  }
+  .company-section-text h1 {
+  
+    font-size: 2rem;
+   
+  }
+}
+
+@media (max-width: 1200px) {
+  .company-logo {
+    width: 100px;
+    height: 100px;
+  }
+  .company-logo-container p {
+    width: 100px;
+  }
+  .company-section-text h1 {
+  
+    font-size: 2rem;
+   
+  }
+}
+
+@media (max-width: 1000px) {
+  .company-logo {
+    width: 90px;
+    height: 90px;
+  }
+  .company-logo-container p {
+    width: 90px;
+  }
+  .company-section-text h1 {
+  
+    font-size: 2rem;
+   
+  }
+}
+
+@media (max-width: 900px) {
+  .company-logo {
+    width: 80px;
+    height: 80px;
+  }
+  .company-logo-container p {
+    width: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .company-logo {
+    width: 70px;
+    height: 70px;
+  }
+  .company-logo-container p {
+    width: 70px;
+  }
+}
+
+@media (max-width: 700px) {
+  .company-logo {
+    width: 60px;
+    height: 60px;
+  }
+  .company-logo-container p {
+    width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .company-logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .company-section-text h1 {
+  
+    font-size: 1rem;
+   
+  }
+}
+
+@media (max-width: 500px) {
+  .company-logo {
+    width: 50px;
+    height: 50px;
+  }
+ 
+}
+
+@media (max-width: 400px) {
+  .company-logo {
+    width: 50px;
+    height: 50px;
+  }
+ 
+}
+
+@media (max-width: 300px) {
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .company-logo-container p {
+    width: 20px;
+  }
+}
